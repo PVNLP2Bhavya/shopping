@@ -1,0 +1,275 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: indigo;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    height:75px;
+    top: none;
+    position: sticky;
+    background:white;
+    margin-bottom: 60px;
+    border-bottom: 3px solid darkorchid;
+    z-index: 5;
+}
+    
+
+.search-control{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 2px solid rgb(250, 7, 169) !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 0px !important;
+    box-shadow: rgb(250, 7, 169);
+    width:750px;
+    height:45px;
+    
+    
+}
+.input-group-text{
+    background: rgb(250, 7, 169) !important;
+    border: 2px solid rgb(250, 7, 169) !important;
+    margin:8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.search-box{
+    display: inline-flex;
+    column-width: 5px;
+    margin-top: 5px;
+    height:80%;
+}
+.fa-search{
+    color:white;
+}
+.menu-slide {
+    width:30%;
+    height: 25px;
+    float: right;
+    
+}
+.menu-slide ul {
+    display: inline-flex;
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+}
+.menu-slide ul li{
+    border-left: 1px solid purple;
+    list-style-type: none;
+    padding: 22px 20px  ;
+    margin-top: 10px;
+    margin-top: 0.2%;
+    text-align:center;
+    background-color: rgb(250, 7, 169);
+    cursor: pointer;
+}
+.menu-slide ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+
+}
+.fa-shopping-basket{
+    padding-right: 5px;
+
+}
+.fa-user-plus{
+    padding-right: 5px;
+}
+.fa-sign-in{
+    padding-right: 5px;
+}
+.side-bar-menu{
+    height: 79%;
+    width: 15%;
+    font-size: 16px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+    margin-top: -40px;
+}
+.side-bar-menu ul{
+    margin-left: 10px;
+}
+.side-bar-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-bar-menu ul li:hover{
+    color:  rgb(250, 7, 169);
+}
+.side-bar-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-bar-menu ul li:hover ul{
+    display: block;
+    margin-top: 18px;
+    height: 350px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ecece;
+    box-shadow : 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+#menu-btn ,#close-btn{
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(250, 7, 169) ;
+    display: none;
+}
+/*----------------SLIDER CSS-----------*/
+.slider{
+    width: 85%;
+    margin-left: 15%;
+    padding: 0px 10px ;
+    margin-top: -40px;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+    z-index:1 !important;
+}
+/*---------featured categories-------*/
+.featured-categories{
+    margin:50px 0;
+}
+.featured-categories img{
+    padding:20px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.featured-categories img:hover{
+    transform:scale(1.1);
+}
+/*----------On Sale product Css--------------*/
+.sale-title{
+    background-color: rgb(250, 7, 169) ;
+    color:#fff;
+    width: 180px;
+    padding:4px 10px;
+    height:40px;
+    margin-bottom:30px;
+    display: flex;
+}
+.sale-title h2{
+    font-size: 24px;
+}
+.sale-title:after{
+    content: '';
+    border-top: 40px solid rgb(250, 7, 169);
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+/*------product css-----*/
+.product{
+    width:100%;
+}
+.overlay-right{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    padding: 20px 20px;
+    margin-left: 20px;
+    width: 150px;
+}
+.overlay-right .fa{
+    cursor: pointer;
+    background-color: #fff;
+    color:#000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product:hover .overlay-right{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+/*-------------product bottom css-----------*/
+.product-bottom{
+    margin-left: -25px;
+}
+.product-bottom .fa{
+    color:darkorchid;
+    text-align: center;
+    width: 15px;
+    font-size: 20px;
+    margin-top: 305px;
+}
+.designer-title p{
+    font-size: 20px;
+    font-weight: bold;  
+    margin-left:-10px;
+}
+.designer-title h5{
+    margin-top: -20px;
+    font-size: 20px;
+}
+.product-2 img{
+    margin-left: 100px;
+
+}
+.overlay-right-2{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    padding: 20px 120px;
+    margin-left: 20px;
+    width: 150px;
+}
+.overlay-right-2 .fa{
+    cursor: pointer;
+    background-color: #fff;
+    color:#000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right-2 .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.product-2:hover .overlay-right-2{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
